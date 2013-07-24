@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Amount:</b>
+  <%= @ingredientship.amount %>
+</p>
+
+<p>
+  <b>Style:</b>
+  <%= @ingredientship.style %>
+</p>
+
+
+<%= link_to 'Edit', edit_ingredientship_path(@ingredientship) %> |
+<%= link_to 'Back', ingredientships_path %>
