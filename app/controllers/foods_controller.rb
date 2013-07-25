@@ -1,6 +1,5 @@
 class FoodsController < ApplicationController
-  # GET /foods
-  # GET /foods.json
+
   def index
     @foods = Food.all
 
@@ -10,8 +9,6 @@ class FoodsController < ApplicationController
     end
   end
 
-  # GET /foods/1
-  # GET /foods/1.json
   def show
     @food = Food.find(params[:id])
 
@@ -21,8 +18,6 @@ class FoodsController < ApplicationController
     end
   end
 
-  # GET /foods/new
-  # GET /foods/new.json
   def new
     @food = Food.new
 
@@ -32,13 +27,10 @@ class FoodsController < ApplicationController
     end
   end
 
-  # GET /foods/1/edit
   def edit
     @food = Food.find(params[:id])
   end
 
-  # POST /foods
-  # POST /foods.json
   def create
     @food = Food.new(params[:food])
 

@@ -1,12 +1,12 @@
 MakinLunch::Application.routes.draw do
 
-  resources :ingredientships
+  resources :lunches
 
 
-  root :to => "ingredientships#index"
+  root :to => "lunches#index"
+
 
   resources :meals
-
 
   resources :foods
 
