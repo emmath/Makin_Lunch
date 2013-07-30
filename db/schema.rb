@@ -19,33 +19,17 @@ ActiveRecord::Schema.define(:version => 20130725031042) do
     t.datetime "updated_at", :null => false
   end
 
-  create_table "ingredientships", :force => true do |t|
-    t.integer  "amount"
-    t.string   "style"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
   create_table "lunches", :force => true do |t|
+    t.integer  "food_id",    :limit => 255
+    t.integer  "meal_id",    :limit => 255
     t.string   "occasion"
-    t.string   "food_id"
-    t.string   "meal_id"
     t.datetime "date"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
   end
 
   create_table "meals", :force => true do |t|
     t.string   "dish"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "recipes", :force => true do |t|
-    t.string   "name"
-    t.integer  "food_id"
-    t.integer  "meal_id"
-    t.datetime "date"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
