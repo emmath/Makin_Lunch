@@ -20,8 +20,8 @@
 <% @lunches.each do |lunch| %>
   <tr>
     <td><%= lunch.occasion %></td>
-    <td><%= lunch.food_id %></td>
-    <td><%= lunch.meal_id %></td>
+    <td><%= lunch.food.vegetable %></td>
+    <td><%= lunch.meal.dish %></td>
     <td><%= lunch.date %></td>
     <td><%= link_to 'Show', lunch %></td>
     <td><%= link_to 'Edit', edit_lunch_path(lunch) %></td>
