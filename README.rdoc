@@ -4,3 +4,5 @@ You have some veggies--add some more by following the "New Vegetable" link.
 You have some dish ideas--add more of those by following the "New Dish" link.
 
 Put those together with a new lunch and keep track of what you have made!
+
+MIT License: http://emma.mit-license.org
